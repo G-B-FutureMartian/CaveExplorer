@@ -17,3 +17,4 @@ me). The biggest difference between a MUD and a
 MUSH is that in a MUSH you can type commands
 in-game to edit the layout(like @dig to make a 
 new room. More about MUDs and MUSHes -> 
+https://www.howtogeek.com/661428/text-based-vr-explore-the-pioneering-world-of-mushes/
