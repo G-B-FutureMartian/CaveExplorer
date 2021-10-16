@@ -18,3 +18,7 @@ MUSH is that in a MUSH you can type commands
 in-game to edit the layout(like @dig to make a 
 new room. More about MUDs and MUSHes -> 
 https://www.howtogeek.com/661428/text-based-vr-explore-the-pioneering-world-of-mushes/
+
+
+# Dependencies
+This project aims to have as few as possible dependencies, but(unless you play alone after ignoring the installer and commenting out some code) there will be some depend
