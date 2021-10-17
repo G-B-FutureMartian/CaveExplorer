@@ -1,7 +1,7 @@
 import sys
-import singleplayer
+from singleplayer import Hello
 
-print("Welcome to cave explorer, a MUSH exploration game."
-user = input("How do you want to play? SinglePlayer(BETA) or MultiPlayer?")
-if user == "SinglePlayer" or "singlePlayer":
-      main()
+print("Welcome to cave explorer, a MUSH exploration game.")
+user = input("Would you like to play Multiplayer?")
+if user == "Yes" or "yes" or "y":
+    Hello()
