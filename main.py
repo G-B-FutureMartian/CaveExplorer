@@ -1,7 +1,13 @@
-import sys
-from singleplayer import Hello
+import singleplayer
+from host import host, setupHosting
 
-print("Welcome to cave explorer, a MUSH exploration game.")
+def multiUser():
+  yNo = input("Would you like to host? ")
+  if 'y' or 'Y' in yNo:
+    setupHosting()
+    host(host.route, host.userPort)
+
+print("Welcome to cave explorer, a MUSH game.")
 user = input("Would you like to play Multiplayer?")
-if user == "Yes" or "yes" or "y":
-    Hello()
+if "y" in user:
+    multiUser()

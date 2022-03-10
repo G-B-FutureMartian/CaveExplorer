@@ -18,10 +18,12 @@ def setupHosting():
   sleep(.25)
   print("- if you don't know, type N.")
   rawRoute = input()
-  if n or N in rawRoute:
+  if 'n' or 'N' in rawRoute:
     route = "/"
-  elif a or A in rawRoute:
+  elif 'a' or 'A' in rawRoute:
     route = "/admin"
+  return userPort
+  return route
 
 def host(route, userPort):
   @app.route(route)
@@ -31,7 +33,9 @@ def host(route, userPort):
   app.run(debug=False, host="0.0.0.0", port=userPort)
 
 if __name__ == "__main__":
-  print("You will now begin hosting an empty room.")
+  print("You will begin hosting an empty room.")
   print("You will be using the Flask framework for a local server.")
   if input("Ok? ") == "Yes" or "yes":
     print("Great!")
+    setupHosting()
+    host()
