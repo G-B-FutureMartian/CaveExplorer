@@ -1,2 +1,1 @@
-def Hello():
-  print("Hello")
+from time import sleep

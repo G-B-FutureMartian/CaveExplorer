@@ -19,13 +19,14 @@ def setupHosting():
   print("- if you don't know, type N.")
   rawRoute = input()
   if 'n' or 'N' in rawRoute:
+    global route
     route = "/"
   elif 'a' or 'A' in rawRoute:
     route = "/admin"
   return userPort
   return route
 
-def host(route, userPort):
+def hosting(route0, usersPort):
   @app.route(route)
   def index():
     return("Hello, World")
@@ -38,4 +39,4 @@ if __name__ == "__main__":
   if input("Ok? ") == "Yes" or "yes":
     print("Great!")
     setupHosting()
-    host()
+    hosting()
