@@ -1,5 +1,7 @@
 # CaveExplorer
-A MUSH game were you explore caves.
+A MUSH game were you explore caves. The game is text only.
+In the game, you explore caves, dungeons, and more. You will 
+also be able to play user-created levels, and multiplayer.
 
 # MUD
 MUD is a type of game were the entire game is 
