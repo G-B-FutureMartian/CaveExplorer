@@ -23,7 +23,9 @@ https://www.howtogeek.com/661428/text-based-vr-explore-the-pioneering-world-of-m
 
 
 # Dependencies
-This project aims to have as few as possible dependencies, but(unless you play alone after ignoring the installer and commenting out some code)
-there will be some dependencies. Currently, the only dependency will be Flask, a library for creating servers. These servers will be local only,
+This project aims to have as few as possible dependencies, but
+there will be some dependencies. Currently,
+the only dependency will be Flask, a library for creating servers. 
+These servers will be local only,
 and everything you do should be away from prying eyes. I say should because chances are that if you found this program, you probably can code in
 Python, so, if you edit this code you are at your own risk.
