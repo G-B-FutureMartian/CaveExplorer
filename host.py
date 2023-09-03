@@ -26,7 +26,7 @@ def setupHosting():
   return userPort
   return route
 
-def hosting(route0, usersPort):
+def hosting(route, usersPort):
   @app.route(route)
   def index():
     return("Hello, World")
@@ -36,7 +36,7 @@ def hosting(route0, usersPort):
 if __name__ == "__main__":
   print("You will begin hosting an empty room.")
   print("You will be using the Flask framework for a local server.")
-  if input("Ok? ") == "Yes" or "yes":
+  if "y" in input("Ok? y/n"):
     print("Great!")
     setupHosting()
     hosting()
