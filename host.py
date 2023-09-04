@@ -13,7 +13,7 @@ def setupHosting():
   print("That's half over the work done already. Easy, right?")
   sleep(0.5)
   print("For organization, what type or user are you?")
-  sleep(1)
+  sleep(.5)
   print("D for dev/playtester, N for normal Enduser-")
   sleep(.25)
   print("- if you don't know, type N.")
@@ -23,10 +23,9 @@ def setupHosting():
     route = "/"
   elif 'a' or 'A' in rawRoute:
     route = "/admin"
-  return userPort
-  return route
+  return userPort, route
 
-def hosting(route, usersPort):
+def host(route, userPort):
   @app.route(route)
   def index():
     return("Hello, World")
@@ -39,4 +38,4 @@ if __name__ == "__main__":
   if "y" in input("Ok? y/n"):
     print("Great!")
     setupHosting()
-    hosting()
+    host()
