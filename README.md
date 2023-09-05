@@ -27,5 +27,4 @@ This project aims to have as few as possible dependencies, but
 there will be some dependencies. Currently,
 the only dependency will be Flask, a library for creating servers. 
 These servers will be local only,
-and everything you do should be away from prying eyes. I say should because chances are that if you found this program, you probably can code in
-Python, so, if you edit this code you are at your own risk.
+and everything you do should be away from prying eyes.
